@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cofetaría Marabou</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Portafolio de productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Cofetaría Marabou</h1>
+            <p>Nuestros pasteles están creados especialmente...</p>
+            <button>Productos</button>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="pokemon-search" placeholder="Buscar...">
+            <button type="button" id="search-button">Buscar</button>
+        </div>
+    </header>
+    <main>
+        <section id="pokemon-info" class="pokemon-info">
+            <!-- Los resultados de la búsqueda se mostrarán aquí -->
+        </section>
+        <section class="products">
+            <div class="product-category">
+                <img src="IMG/ima.jpg" alt="Candy Bar">
+                <h2>Callback</h2>
+                <p>Un callback es una función que se pasa como argumento a otra función y se ejecuta en un momento específico dentro de esa función. Este mecanismo es crucial en la programación, especialmente para manejar eventos asíncronos como solicitudes de red o temporizadores, sin bloquear el flujo principal del programa. Por ejemplo, en JavaScript, las funciones de callback se utilizan frecuentemente con métodos como setTimeout o al manejar eventos. En Python, se emplean en bibliotecas de interfaces gráficas y redes. Las callbacks permiten que el código sea más modular y reutilizable, facilitando la personalización del comportamiento de funciones genéricas sin necesidad de duplicar código. </p>
+            </div>
+            <div class="product-category">
+                <img src="IMG/ima_2.jpg" alt="Pasteles">
+                <h2>Promiss</h2>
+                <p>
+                    Una promesa (promise) es un objeto en programación que representa la eventual finalización o falla de una operación asíncrona y su valor resultante. Permite manejar operaciones asíncronas de manera más ordenada y legible comparado con callbacks. Una promesa puede estar en uno de tres estados: pendiente (pending), cumplida (fulfilled) o rechazada (rejected). Usar promesas ayuda a evitar el "infierno de callbacks" y facilita la gestión de operaciones asíncronas, mejorando la claridad y mantenibilidad del código.</p>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="featured-product">
+                <img src="IMG/lugar_4.jpg" alt="Producto 1">
+                <h3>Async</h3>
+                <p>La palabra clave async se utiliza en programación para definir funciones asíncronas que permiten escribir código asíncrono de manera más simple y legible. Las funciones marcadas con async devuelven automáticamente una promesa (en JavaScript) o un objeto de futuro (en Python). Junto con await, que se usa dentro de una función asíncrona para esperar la resolución de promesas u operaciones asíncronas, async permite escribir código que se comporta de manera síncrona, facilitando la lectura y evitando el "infierno de callbacks".</p>
+            </div>
+            <div class="featured-product">
+                <img src="IMG/lugar_2.jpg" alt="Producto 3">
+                <h3>Await</h3>
+                <p>La palabra clave await se usa en programación dentro de funciones asíncronas definidas con async para pausar la ejecución de la función hasta que una promesa (o una operación asíncrona) se resuelva. Esto permite escribir código asíncrono de manera que se lea y se comporte de forma más síncrona, mejorando la claridad y la legibilidad del código. await facilita la gestión de operaciones asíncronas al evitar la anidación excesiva de callbacks y promesas.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="footer-section">
+                <h4>Transporte</h4>
+                <p>Bajo la atenta supervisión del maestro...</p>
+            </div>
+            <div class="footer-section">
+                <h4>Embalaje</h4>
+                <p>Los productos adquiridos en nuestra unidad...</p>
+            </div>
+            <div class="footer-section">
+                <h4>Calidad</h4>
+                <p>Bajo la atenta supervisión del maestro...</p>
+            </div>
+            <div class="footer-section">
+                <h4>Horario</h4>
+                <p>Lunes-Viernes: 08:00 - 21:00<br>Sábado-Domingo: 08:00 - 21:00</p>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <p>Contacto: hnapiracirma@yahoo.com</p>
+            <p>Tel: 0746 076 387</p>
+            <p>Iași, Calle Dudescu, No.11</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

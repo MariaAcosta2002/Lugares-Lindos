@@ -1,0 +1,265 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ff1493, #ff6700); /* Gradiente rosa fuerte y naranja */
+    color: #333;
+    padding-bottom: 80px; /* Espacio para el pie de página */
+}
+
+/* Estilos del Encabezado */
+header {
+    background: linear-gradient(135deg, #f5f5f5, #d2b48c); /* Degradado blanco a café */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    position: relative;
+    border-bottom: 3px solid #ff1493; /* Línea rosa fuerte */
+    border-radius: 32px; /* Bordes muy redondeados */
+    overflow: hidden; /* Asegura que las manchas no se salgan del área del encabezado */
+}
+
+/* Añadir manchas lilas estáticas en el encabezado */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(200, 0, 255, 0.5) 20%, transparent 80%);
+    pointer-events: none; /* No bloquear interacción con el contenido del encabezado */
+}
+
+/* Estilos del Encabezado en dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        border-radius: 20px; /* Bordes más redondeados en móvil */
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-bottom: 2px solid #ff1493; /* Línea rosa fuerte en hover */
+    border-radius: 16px; /* Bordes más redondeados en enlaces */
+}
+
+nav ul li a:hover {
+    background-color: #e0d8d1; /* Café claro */
+    color: white;
+    transform: translateY(-2px); /* Efecto de elevación en hover */
+}
+
+/* Estilos de la Sección Hero */
+.hero {
+    margin: 30px auto;
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #f5f5f5, #d2b48c); /* Degradado blanco a café */
+    border-radius: 32px; /* Bordes muy redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    color: #333;
+    border: 3px solid #ff1493; /* Línea rosa fuerte */
+}
+
+/* Estilos de la Sección Hero en dispositivos móviles */
+@media (max-width: 768px) {
+    .hero {
+        border-radius: 20px; /* Bordes más redondeados en móvil */
+    }
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.hero button {
+    padding: 12px 24px;
+    background-color: #ff1493; /* Rosa fuerte */
+    border: 2px solid #ff1493; /* Línea rosa fuerte */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 24px; /* Bordes más redondeados */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #ff6700; /* Naranja */
+    border-color: #ff6700; /* Naranja */
+    transform: translateY(-2px); /* Efecto de elevación en hover */
+}
+
+/* Estilos de la Barra de Búsqueda */
+.search-bar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search-bar input {
+    padding: 12px;
+    border: 2px solid #ff1493; /* Línea rosa fuerte */
+    border-radius: 24px; /* Bordes más redondeados */
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #ff1493; /* Rosa fuerte en foco */
+}
+
+.search-bar button {
+    padding: 12px;
+    background-color: #ff1493; /* Rosa fuerte */
+    border: 2px solid #ff1493; /* Línea rosa fuerte */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 24px; /* Bordes más redondeados */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #ff6700; /* Naranja */
+    border-color: #ff6700; /* Naranja */
+    transform: translateY(-2px); /* Efecto de elevación en hover */
+}
+
+/* Estilos de la Sección de Productos */
+.products, .featured-products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.product-category, .featured-product {
+    text-align: center;
+    background: linear-gradient(135deg, #f5f5f5, #d2b48c); /* Degradado blanco a café */
+    color: #333;
+    padding: 20px;
+    border-radius: 32px; /* Bordes muy redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 3px solid #ff1493; /* Línea rosa fuerte */
+}
+
+.product-category:hover, .featured-product:hover {
+    transform: translateY(-2px); /* Efecto de elevación en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
+}
+
+.product-category img, .featured-product img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+/* Estilos de Información de Pokémon */
+.pokemon-info {
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f5f5, #d2b48c); /* Degradado blanco a café */
+    color: #333;
+    border-radius: 32px; /* Bordes muy redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 3px solid #ff1493; /* Línea rosa fuerte */
+    max-width: 90%;
+}
+
+/* Estilos de Información de Pokémon en dispositivos móviles */
+@media (max-width: 768px) {
+    .pokemon-info {
+        border-radius: 20px; /* Bordes más redondeados en móvil */
+    }
+}
+
+.pokemon-info img {
+    width: 180px;
+    height: 180px;
+}
+
+.pokemon-info h2, .pokemon-info p {
+    margin: 10px 0;
+}
+
+/* Estilos del Pie de Página */
+footer {
+    background: linear-gradient(135deg, #f5f5f5, #d2b48c); /* Degradado blanco a café */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+    border-top: 3px solid #ff1493; /* Línea rosa fuerte */
+    border-radius: 32px; /* Bordes muy redondeados */
+}
+
+/* Estilos del Pie de Página en dispositivos móviles */
+@media (max-width: 768px) {
+    footer {
+        border-radius: 20px; /* Bordes más redondeados en móvil */
+    }
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-contact {
+    margin-top: 20px;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .products, .featured-products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-category img, .featured-product img {
+        width: 100px; /* Tamaño ajustado */
+        height: 100px; /* Tamaño ajustado */
+    }
+}
